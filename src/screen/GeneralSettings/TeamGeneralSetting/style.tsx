@@ -1,0 +1,138 @@
+import {StyleSheet} from 'react-native';
+import {COLOR, commonStyles, FONT} from '../../../themes/StyleGuides';
+
+export default StyleSheet.create({
+  container: {
+    ...commonStyles.mainContainer,
+  },
+  title: {
+    fontSize: 16,
+    fontWeight: '700',
+    color: COLOR.whites,
+    marginLeft: '3.6%',
+  },
+  AmmountContainer: {
+    width: '90%',
+    backgroundColor: COLOR.gray_7,
+    alignSelf: 'center',
+    borderRadius: 14,
+    marginBottom: '5%',
+    marginTop: '5%',
+  },
+  titleContainer: {
+    height: 40,
+    marginBottom: '2%',
+    backgroundColor: COLOR.perpal,
+    justifyContent: 'center',
+    borderRadius: 14,
+  },
+  SearchContainer: {
+    ...commonStyles.verticleView,
+    paddingHorizontal: '2%',
+  },
+  searchIcon: {
+    width: 20,
+    height: 20,
+    marginLeft: 10,
+  },
+  searchBar: {
+    width: '50%',
+    backgroundColor: COLOR.white,
+    borderRadius: 25,
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 2,
+    paddingVertical: 2,
+  },
+  searchInput: {
+    flex: 1,
+    marginRight: '5%',
+    color: COLOR.perpal,
+  },
+  searchPlaceholder: {
+    color: COLOR.gray,
+  },
+  dropdownContainer: {
+    borderRadius: 25,
+    flexDirection: 'column',
+    position: 'relative',
+    width: '50%',
+    height: '100%',
+    alignContent: 'center',
+    backgroundColor: COLOR.white,
+  },
+  dropdownBtn: {
+    width: '100%',
+    flexDirection: 'row',
+    textAlign: 'center',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    borderRadius: 10,
+    backgroundColor: COLOR.white,
+    padding: 5,
+    alignContent: 'center',
+    marginVertical: 5,
+  },
+  dropdown: {
+    width: '100%',
+    paddingHorizontal: 3,
+    flexDirection: 'row',
+    textAlign: 'center',
+    justifyContent: 'space-between',
+    borderRadius: 10,
+    backgroundColor: COLOR.white,
+  },
+  dropdownText: {
+    color: COLOR.perpal,
+    fontFamily: FONT.Geist_Medium,
+  },
+
+  emplyeeBtnWraper: {
+    width: '100%',
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+  },
+  addButton: {
+    backgroundColor: COLOR.perpal,
+    borderRadius: 25,
+    alignItems: 'center',
+    marginBottom: '5%',
+    marginRight: 5,
+    alignSelf: 'flex-end',
+    paddingHorizontal: '3%',
+    paddingVertical: '2%',
+  },
+  addButtonText: {
+    color: COLOR.white,
+    fontFamily: FONT.Geist_Bold,
+    fontSize: 14,
+  },
+  cardContainer: {
+    flex: 1,
+    padding: '5%',
+    backgroundColor: COLOR.gray_4,
+  },
+
+  label: {
+    color: COLOR.white,
+    fontFamily: FONT.Geist_Medium,
+    textAlign: 'center',
+    width: '30%',
+    height: '100%',
+    borderBottomWidth: 2,
+    borderColor: COLOR.white1,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingVertical: 10,
+  },
+  bottomBar: {
+    width: '100%',
+    height: 50,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    backgroundColor: COLOR.primary,
+    position: 'absolute',
+    bottom: 0,
+  },
+});

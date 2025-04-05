@@ -1,0 +1,143 @@
+import {StyleSheet} from 'react-native';
+import {COLOR, commonStyles, FONT} from '../../../themes/StyleGuides';
+
+// Check orientation
+const styles = StyleSheet.create({
+  container: {
+    ...commonStyles.mainContainer,
+  },
+  MessagesText: {
+    fontSize: 14,
+    fontFamily: FONT.Geist_SemiBold,
+    color: COLOR.black_4,
+  },
+  searchIcon: {
+    width: 15,
+    height: 15,
+    resizeMode: 'center',
+    tintColor: COLOR.gray,
+  },
+  minaseIcon: {
+    width: 15,
+    height: 15,
+    resizeMode: 'center',
+  },
+  Actions: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: COLOR.gray_5,
+    marginRight: 10,
+  },
+  FilterText: {fontSize: 11, fontWeight: '700', color: COLOR.white},
+  AllContainer: {
+    width: '90%',
+    height: 40,
+    borderRadius: 15,
+    backgroundColor: COLOR.whites,
+    ...commonStyles.center,
+    alignSelf: 'center',
+    marginBottom: '4%',
+  },
+  DropDownArrow: {
+    width: 15,
+    height: 15,
+    resizeMode: 'center',
+    marginRight: 10,
+  },
+  lenghtText: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: COLOR.gray_5,
+    marginLeft: '3%',
+  },
+  dialPadIcon: {
+    width: 20,
+    height: 20,
+    resizeMode: 'contain',
+    tintColor: COLOR.white,
+  },
+  DialPads: {
+    backgroundColor: COLOR.perpal,
+    width: 48,
+    height: 48,
+    borderRadius: 30,
+    position: 'absolute',
+    bottom: '5%',
+    alignSelf: 'flex-end',
+    right: '7%',
+    ...commonStyles.center,
+  },
+  modals: {
+    position: 'absolute',
+    alignSelf: 'flex-end',
+    width: '40%',
+    backgroundColor: COLOR.whites,
+    zIndex: 1000,
+  },
+  modalItem: {
+    paddingHorizontal: '8%',
+    paddingVertical: '2%',
+    borderRadius: 5,
+    alignSelf: 'flex-start',
+    marginVertical: '3%',
+    marginLeft: '10%',
+  },
+  modalText: {fontSize: 10, fontWeight: '700', color: COLOR.whites},
+  TextInputCIntainer: {
+    ...commonStyles.verticleView,
+    paddingHorizontal: '5%',
+    marginTop: '2%',
+  },
+  filterBtn: {
+    paddingVertical: '1.2%',
+    backgroundColor: COLOR.perpal_2,
+    borderRadius: 5,
+    ...commonStyles.verticleView,
+    width: '23%',
+    paddingHorizontal: '3%',
+  },
+  FilterIcon: {width: 13, height: 13, resizeMode: 'center'},
+  selectionModeFiels: {
+    width: '100%',
+    backgroundColor: COLOR.whites,
+    borderRadius: 14,
+    alignSelf: 'center',
+    marginBottom: '3%',
+    paddingHorizontal: '3%',
+    paddingVertical: '2%',
+    paddingLeft: '5%',
+  },
+  closebtn: {marginRight: '1%'},
+  closeICon: {width: 10, height: 10, resizeMode: 'contain'},
+  fieldCrosView: {...commonStyles.verticleView},
+  titleField: {
+    fontSize: 12,
+    fontWeight: '700',
+    color: COLOR.gray_5,
+    marginLeft: '8%',
+  },
+  drop: {
+    width: 8,
+    height: 8,
+    resizeMode: 'contain',
+    tintColor: COLOR.black,
+    left: 5,
+  },
+  ActionModalText: {fontSize: 10, fontWeight: '400', color: COLOR.gray_5},
+  ActionDropDown: {
+    paddingHorizontal: '3%',
+    backgroundColor: COLOR.whites,
+    borderWidth: 1,
+    borderColor: COLOR.perpal_3,
+    borderRadius: 10,
+    alignSelf: 'flex-end',
+    position: 'absolute',
+    // top: '50%',
+    paddingVertical: '1%',
+    right: '5%',
+    bottom:-40,
+    zIndex:10
+  },
+});
+
+export default styles;
