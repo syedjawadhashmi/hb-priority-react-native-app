@@ -1,4 +1,4 @@
-import {Icon, Images} from '../../assest';
+  import {Icon, Images} from '../../assest';
 
 export const OnbordingData = [
   {title: 'Welcome To The', discription: 'National Democratic Congress'},
@@ -1919,3 +1919,89 @@ export const Calenderdays = [
   {id: 'sun', label: 'Sun'},
 ];
 
+export const EmployeeCardData = [
+  {
+    id: 1,
+    name: 'John Doe',
+    email: 'johndoe@gmail.com',
+    phone: '(555) 555-5555',
+    userType: 'Agency-Admin',
+  },
+  {
+    id: 2,
+    name: 'John Doe',
+    email: 'johndoe@gmail.com',
+    phone: '(555) 555-5555',
+    userType: 'Agency-Admin',
+  },
+];
+
+
+
+const contactData = [
+  {
+    id: '1',
+    name: 'Maddie Fowler',
+    icon: Icon.facebook,
+    call: true,
+    message: true,
+    callType: 'outgoing', // 'missed', 'received', or 'outgoing'
+  },
+  {
+    id: '2',
+    name: 'Gwen Johnson',
+    icon: '',
+    call: true,
+    message: true,
+    callType: 'received',
+  },
+  {
+    id: '3',
+    name: 'Charlotte Conway',
+    icon: '',
+    call: true,
+    message: true,
+    callType: 'missed',
+  },
+  {
+    id: '4',
+    name: 'Seamus O’Ryan',
+    icon: Icon.google,
+    call: true,
+    message: true,
+    callType: 'outgoing',
+  },
+  {
+    id: '5',
+    name: 'Seamus O’Ryan',
+    icon: Icon.chatnet,
+    call: true,
+    message: true,
+    callType: '',
+  },
+  {
+    id: '6',
+    name: 'Charlotte Conway',
+    icon: '',
+    call: true,
+    message: true,
+    callType: 'missed',
+  },
+  {
+    id: '7',
+    name: 'Seamus O’Ryan',
+    icon: Icon.google,
+    call: true,
+    message: true,
+    callType: 'outgoing',
+  },
+  {
+    id: '8',
+    name: 'Seamus O’Ryan',
+    icon: Icon.chatnet,
+    call: true,
+    message: true,
+    callType: '',
+  },
+];
+export default contactData;

@@ -24,9 +24,12 @@ import SCREEN from '../../data/ScrName';
 const Dashboard = (props: any) => {
   const {navigation} = props;
   const [openModal, setOpenModal] = useState(false);
+  const [selector, setSelector] = useState(null);
+
 
   return (
     <View style={styles.container}>
+
       <Header
         firstIcon={Icon.bars}
         title="Dashboard"
@@ -36,81 +39,98 @@ const Dashboard = (props: any) => {
         <Input placeholder={'Search'} IconStyle={{tintColor: COLOR.gray}} />
 
         <View style={styles.CompView}>
-          <Inbox onpress={()=>navigation.navigate(SCREEN.BottomBarNavigation)} />
-          <Marketing   onpress={() =>
-            navigation.navigate(SCREEN.DrawerNavigations, {
-              screen: SCREEN.DrawerStack,
-              params: {
-                screen: SCREEN.MarketingModule,
-              },
-            })
-          } />
-          <Reviews   onpress={() =>
-            navigation.navigate(SCREEN.DrawerNavigations, {
-              screen: SCREEN.DrawerStack,
-              params: {
-                screen: SCREEN.Reputation,
-              },
-            })
-          } />
+          <Inbox
+            onpress={() => navigation.navigate(SCREEN.BottomBarNavigation)}
+          />
+          <Marketing
+            onpress={() =>
+              navigation.navigate(SCREEN.DrawerNavigations, {
+                screen: SCREEN.DrawerStack,
+                params: {
+                  screen: SCREEN.MarketingModule,
+                },
+              })
+            }
+          />
+          <Reviews
+            onpress={() =>
+              navigation.navigate(SCREEN.DrawerNavigations, {
+                screen: SCREEN.DrawerStack,
+                params: {
+                  screen: SCREEN.Reputation,
+                },
+              })
+            }
+          />
         </View>
         <View style={styles.CompView}>
-          <Seo    onpress={() =>
-            navigation.navigate(SCREEN.DrawerNavigations, {
-              screen: SCREEN.DrawerStack,
-              params: {
-                screen: SCREEN.Check_Ins,
-              },
-            })
-          } />
-          <Calendar  
-          onpress={() =>
-            navigation.navigate(SCREEN.DrawerNavigations, {
-              screen: SCREEN.DrawerStack,
-              params: {
-                screen: SCREEN.CalendarSearch,
-              },
-            })
-          } />
-          <Payments     onpress={() =>
-            navigation.navigate(SCREEN.DrawerNavigations, {
-              screen: SCREEN.DrawerStack,
-              params: {
-                screen: SCREEN.Payments,
-              },
-            })
-          }  />
+          <Seo
+            onpress={() =>
+              navigation.navigate(SCREEN.DrawerNavigations, {
+                screen: SCREEN.DrawerStack,
+                params: {
+                  screen: SCREEN.Check_Ins,
+                },
+              })
+            }
+          />
+          <Calendar
+            onpress={() =>
+              navigation.navigate(SCREEN.DrawerNavigations, {
+                screen: SCREEN.DrawerStack,
+                params: {
+                  screen: SCREEN.CalendarSearch,
+                },
+              })
+            }
+          />
+          <Payments
+            onpress={() =>
+              navigation.navigate(SCREEN.DrawerNavigations, {
+                screen: SCREEN.DrawerStack,
+                params: {
+                  screen: SCREEN.Payments,
+                },
+              })
+            }
+          />
         </View>
         <View style={styles.CompView}>
           <Reports />
           <InternalMessages />
-          <CRMDashBoard  onpress={() =>
-            navigation.navigate(SCREEN.DrawerNavigations, {
-              screen: SCREEN.DrawerStack,
-              params: {
-                screen: SCREEN.CRM,
-              },
-            })
-          }  />
+          <CRMDashBoard
+            onpress={() =>
+              navigation.navigate(SCREEN.DrawerNavigations, {
+                screen: SCREEN.DrawerStack,
+                params: {
+                  screen: SCREEN.CRM,
+                },
+              })
+            }
+          />
         </View>
         <View style={styles.CompView}>
-          <Invoices onpress={() =>
-            navigation.navigate(SCREEN.DrawerNavigations, {
-              screen: SCREEN.DrawerStack,
-              params: {
-                screen: SCREEN.PaymentsMethods,
-              },
-            })
-          } />
+          <Invoices
+            onpress={() =>
+              navigation.navigate(SCREEN.DrawerNavigations, {
+                screen: SCREEN.DrawerStack,
+                params: {
+                  screen: SCREEN.PaymentsMethods,
+                },
+              })
+            }
+          />
           <Estimates />
-          <Documents  onpress={() =>
-            navigation.navigate(SCREEN.DrawerNavigations, {
-              screen: SCREEN.DrawerStack,
-              params: {
-                screen: SCREEN.DocumentsModule,
-              },
-            })
-          }  />
+          <Documents
+            onpress={() =>
+              navigation.navigate(SCREEN.DrawerNavigations, {
+                screen: SCREEN.DrawerStack,
+                params: {
+                  screen: SCREEN.DocumentsModule,
+                },
+              })
+            }
+          />
         </View>
 
         <Buttons
@@ -120,7 +140,8 @@ const Dashboard = (props: any) => {
         />
       </ScrollView>
       <View style={styles.bottomBar}></View>
-      <DashBoardModal visible={openModal} onpress={() => setOpenModal(false)} />
+      <DashBoardModal visible={false} onpress={() => setOpenModal(false)} selector={selector} getData={()=>setSelector} />
+
     </View>
   );
 };

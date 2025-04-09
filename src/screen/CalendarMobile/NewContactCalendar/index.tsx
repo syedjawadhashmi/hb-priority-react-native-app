@@ -25,42 +25,14 @@ const NewContactCalendar = (prop: any) => {
   };
   
   const handleDocumentUpload = async () => {
-    // try {
-    //   const result = await DocumentPicker.pick({
-    //     type: [
-    //       DocumentPicker.types.xlsx,
-    //       DocumentPicker.types.xls,
-    //       DocumentPicker.types.pdf,
-    //     ],
-    //   });
-    //   const fileName = result[0].name;
-    //   setDocumentss(fileName);
-    //   console.log('Selected File: ', document);
-    // } catch (err) {
-    //   if (DocumentPicker.isCancel(err)) {
-    //     console.log('User canceled the document picker');
-    //   } else {
-    //     console.error('Error picking document: ', err);
-    //   }
-    // }
-    FilePickerManager.showFilePicker(
-      {
-        title: 'Select Document',
-        // Accept .xls, .xlsx, and .pdf
-        type: ['application/vnd.ms-excel', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/pdf'],
-      },
-      (response) => {
-        if (response.didCancel) {
-          console.log('User canceled the document picker');
-        } else if (response.error) {
-          console.error('Error picking document: ', response.error);
-        } else {
-          const fileName = response.fileName || 'Unknown File';
-          setDocumentss(fileName);
-          console.log('Selected File: ', response);
-        }
+    FilePickerManager.showFilePicker(null, (response) => {
+      if (response.didCancel) {
+        console.log('User cancelled file picker');
+      } else if (response.error) {
+        console.error('FilePickerManager Error: ', response.error);
+      } else {
       }
-    );
+    });
   };
 
   return (

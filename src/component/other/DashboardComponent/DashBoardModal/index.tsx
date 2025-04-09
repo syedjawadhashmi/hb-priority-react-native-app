@@ -36,39 +36,40 @@ const data = [
 ];
 
 const DashBoardModal = (prop: InboxFilterModalProps) => {
-  const [selector, setSelector] = useState(null);
-  const {visible, saveFilter, onpress} = prop;
+  const {visible, saveFilter, onpress,getData,selector} = prop;
   return (
-    <Modal transparent visible={visible}>
-      <View style={styles.container}>
-        <View style={styles.modelStyle}>
-          <TouchableOpacity style={styles.crossBtn} onPress={onpress}>
-            <Image source={Icon.crose} style={styles.cross} />
-          </TouchableOpacity>
-
-          <View>
-            {data.map((item, index: any) => (
-              <View
-                style={{
-                  ...commonStyles.horizontalView,
-                  marginBottom: '4%',
-                  marginLeft: '5%',
-                }}>
-                <TouchableOpacity
-                  onPress={() => setSelector(index)}
-                  style={styles.selctor}>
-                  {selector == index && <View style={styles.selectorS} />}
-                </TouchableOpacity>
-                <View style={styles.titleContainer}>
-                  <Image style={styles.icon} source={item.icons} />
-                  <Text style={styles.title}>{item.title}</Text>
-                </View>
+    <Modal visible={visible} transparent animationType="fade">
+    <View style={{flex:1, backgroundColor:COLOR.lightBlack, justifyContent: 'center'}}>
+      <View style={styles.modelStyle}>
+        <TouchableOpacity style={styles.crossBtn} onPress={onpress}>
+          <Image source={Icon.crose} style={styles.cross} />
+        </TouchableOpacity>
+  
+        <View>
+          {data.map((item, index:any) => (
+            <View
+              key={index}
+              style={{
+                ...commonStyles.horizontalView,
+                marginBottom: '4%',
+                marginLeft: '5%',
+              }}>
+              <TouchableOpacity
+                onPress={() => getData(index)}
+                style={styles.selctor}>
+                {selector === index && <View style={styles.selectorS} />}
+              </TouchableOpacity>
+              <View style={styles.titleContainer}>
+                <Image style={styles.icon} source={item.icons} />
+                <Text style={styles.title}>{item.title}</Text>
               </View>
-            ))}
-          </View>
+            </View>
+          ))}
         </View>
       </View>
-    </Modal>
+    </View>
+  </Modal>
+  
   );
 };
 export default DashBoardModal;

@@ -201,6 +201,8 @@ export interface InboxFilterModalProps {
   visible?: boolean;
   onpress?: () => void;
   saveFilter?: () => void;
+  getData?:any;
+  selector?:any
 }
 
 export interface DropDownButtonProps {

@@ -18,6 +18,7 @@ const Customize = [
   {title: 'Customize Shadow', id: 2},
   {title: 'Customize Widget Title', id: 3},
 ];
+import {runOnJS} from 'react-native-reanimated';
 
 interface propType {
   BackgroundColor?: () => void;
@@ -56,11 +57,17 @@ const ContainerReputation = (props: propType) => {
     setSelectData(updatedData);
     if (BackgroundColor) BackgroundColor(updatedData);
   };
-
-  const onSelectColor = ({hex}) => {
+  const onSelectColor = (hex: any) => {
+    'worklet';
+    runOnJS(handleColorSelection)(hex);
+  };
+  
+  const handleColorSelection = (hex: any) => {
     handalDataColtroler('BackgroundColor', hex);
     setColor(hex);
   };
+  
+  
   return (
     <View style={styles.container}>
       <View style={styles.containerColor}>
@@ -130,7 +137,7 @@ const ContainerReputation = (props: propType) => {
         <ColorPicker
           style={{width: '70%', alignSelf: 'center'}}
           value="red"
-          onComplete={onSelectColor}>
+          onComplete={(e)=>onSelectColor(e)}>
           <Preview />
           <Panel1 />
           <HueSlider />

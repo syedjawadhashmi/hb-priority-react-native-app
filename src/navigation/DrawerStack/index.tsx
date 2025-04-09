@@ -12,10 +12,10 @@ const DrawerStack = () => {
       <Stack.Screen name={SCREEN.BillingDashboard} component={screens.BillingDashboard} />
       <Stack.Screen name={SCREEN.TeamGeneralSetting} component={screens.TeamGeneralSetting} />
       <Stack.Screen name={SCREEN.EmailReplyForward} component={screens.EmailReplyForward} />
+      <Stack.Screen name={SCREEN.Dashboard} component={screens.Dashboard} />
       <Stack.Screen name={SCREEN.Payments} component={screens.Payments} />
       <Stack.Screen name={SCREEN.InvoiceIDNumber} component={screens.InvoiceIDNumber} />
       <Stack.Screen name={SCREEN.PaymentsMethods} component={screens.PaymentsMethods} />
-      <Stack.Screen name={SCREEN.Dashboard} component={screens.Dashboard} />
       <Stack.Screen name={SCREEN.Check_Ins} component={screens.Check_Ins} />
       <Stack.Screen name={SCREEN.Rankings} component={screens.Rankings} />
       <Stack.Screen name={SCREEN.PerformanceOverview} component={screens.PerformanceOverview} />

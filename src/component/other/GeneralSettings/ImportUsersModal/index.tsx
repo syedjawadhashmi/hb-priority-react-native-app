@@ -13,7 +13,7 @@ const ImportUsersModal = ({
   onClose: () => void;
 }) => {
   const [step, setStep] = useState(1);
-  const [fileName, setFileName] = useState<string | null>(null);
+  const [fileName, setFileName] = useState<string | null>(null)
 
   // Function to handle file upload
   const handleFileUpload = () => {
