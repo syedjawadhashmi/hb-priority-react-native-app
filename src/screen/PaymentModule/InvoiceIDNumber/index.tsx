@@ -92,7 +92,7 @@ const InvoiceIDNumber = (props: any) => {
         <TouchableOpacity
           style={{...styles.CardContainer, marginBottom: '20%'}}
           onPress={() =>
-            navigation.navigate(SCREEN.DrawerNavigations, {
+            navigation.navigate(SCREEN.DashBoardDrawer, {
               screen: SCREEN.DrawerStack,
               params: {
                 screen: SCREEN.PaymentsMethods,

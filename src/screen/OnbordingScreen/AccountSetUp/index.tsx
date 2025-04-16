@@ -74,7 +74,7 @@ const AccountSetUp = (props:any) => {
       ) : currentBox === 12 ? (
         <WebsiteTextable onpress={() => setCurrentBox(currentBox + 1)} />
       ) : (
-        <SuccessAccount onpress={() =>  navigation.navigate(SCREEN.DrawerNavigations, {
+        <SuccessAccount onpress={() =>  navigation.navigate(SCREEN.DashBoardDrawer, {
           screen: SCREEN.DrawerStack,
           params: {
             screen: SCREEN.GeneralSettingsAccount,

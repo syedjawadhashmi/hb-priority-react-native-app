@@ -4,6 +4,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import * as screens from '../../screen';
 import SCREEN from '../../data/ScrName';
 import DrawerNavigations from '../DrawerNavigation';
+import DashBoardDrawer from '../DashBoardDrawer';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,10 +19,14 @@ export default function StackNavigation() {
         <Stack.Screen name={SCREEN.ForgotPassword} component={screens.ForgotPassword} />
         <Stack.Screen name={SCREEN.AccountSetUp} component={screens.AccountSetUp} />
 
-        <Stack.Screen name={SCREEN.NotificationsAdditionalOptions} component={screens.NotificationsAdditionalOptions} />
+        {/* <Stack.Screen name={SCREEN.NotificationsAdditionalOptions} component={screens.NotificationsAdditionalOptions} /> */}
 
 
 
+        <Stack.Screen
+          name={SCREEN.DashBoardDrawer}
+          component={DashBoardDrawer}
+        />
         <Stack.Screen
           name={SCREEN.DrawerNavigations}
           component={DrawerNavigations}

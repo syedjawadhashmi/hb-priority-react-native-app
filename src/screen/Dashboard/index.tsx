@@ -68,53 +68,17 @@ const Dashboard = (props: any) => {
 
         <View style={styles.CompView}>
           <Inbox
-            onpress={() => navigation.navigate(SCREEN.BottomBarNavigation)}
+            onpress={() => navigation.navigate(SCREEN.DrawerNavigations)}
           />
-          <Marketing
-            onpress={() =>
-              navigation.navigate(SCREEN.DrawerNavigations, {
-                screen: SCREEN.DrawerStack,
-                params: {
-                  screen: SCREEN.MarketingModule,
-                },
-              })
-            }
-          />
-          <Reviews
-            onpress={() =>
-              navigation.navigate(SCREEN.DrawerNavigations, {
-                screen: SCREEN.DrawerStack,
-                params: {
-                  screen: SCREEN.Reputation,
-                },
-              })
-            }
-          />
+          <Marketing />
+          <Reviews />
         </View>
         <View style={styles.CompView}>
-          <Seo
-            onpress={() =>
-              navigation.navigate(SCREEN.DrawerNavigations, {
-                screen: SCREEN.DrawerStack,
-                params: {
-                  screen: SCREEN.Check_Ins,
-                },
-              })
-            }
-          />
-          <Calendar
-            onpress={() =>
-              navigation.navigate(SCREEN.DrawerNavigations, {
-                screen: SCREEN.DrawerStack,
-                params: {
-                  screen: SCREEN.CalendarSearch,
-                },
-              })
-            }
-          />
+          <Seo />
+          <Calendar />
           <Payments
             onpress={() =>
-              navigation.navigate(SCREEN.DrawerNavigations, {
+              navigation.navigate(SCREEN.DashBoardDrawer, {
                 screen: SCREEN.DrawerStack,
                 params: {
                   screen: SCREEN.Payments,
@@ -126,39 +90,14 @@ const Dashboard = (props: any) => {
         <View style={styles.CompView}>
           <Reports />
           <InternalMessages />
-          <CRMDashBoard
-            onpress={() =>
-              navigation.navigate(SCREEN.DrawerNavigations, {
-                screen: SCREEN.DrawerStack,
-                params: {
-                  screen: SCREEN.CRM,
-                },
-              })
-            }
-          />
+          <CRMDashBoard />
         </View>
         <View style={styles.CompView}>
           <Invoices
-            onpress={() =>
-              navigation.navigate(SCREEN.DrawerNavigations, {
-                screen: SCREEN.DrawerStack,
-                params: {
-                  screen: SCREEN.PaymentsMethods,
-                },
-              })
-            }
+          
           />
           <Estimates />
-          <Documents
-            onpress={() =>
-              navigation.navigate(SCREEN.DrawerNavigations, {
-                screen: SCREEN.DrawerStack,
-                params: {
-                  screen: SCREEN.DocumentsModule,
-                },
-              })
-            }
-          />
+          <Documents />
         </View>
 
         <Buttons
@@ -168,7 +107,7 @@ const Dashboard = (props: any) => {
         />
       </ScrollView>
       <View style={styles.bottomBar}></View>
-      <Modal visible={openModal} transparent >
+      <Modal visible={openModal} transparent>
         <View
           style={{
             flex: 1,

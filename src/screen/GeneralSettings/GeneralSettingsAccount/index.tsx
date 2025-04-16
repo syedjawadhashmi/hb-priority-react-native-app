@@ -11,7 +11,7 @@ import styles from './style';
 import Header from '../../../component/common/Header';
 import {Icon} from '../../../assest';
 import SCREEN from '../../../data/ScrName';
-import {COLOR, commonStyles, hp} from '../../../themes/StyleGuides';
+import { hp} from '../../../themes/StyleGuides';
 
 const GeneralSettingsAccount = (prop: any) => {
   const {navigation} = prop;
@@ -33,6 +33,10 @@ const GeneralSettingsAccount = (prop: any) => {
       title: 'Billing',
       icons: Icon.Wallet,
     },
+    {
+      title: 'Webchat Settings',
+      icons: Icon.chatnet,
+    },
   ];
 
   const handalNav = (id: any) => {
@@ -44,6 +48,9 @@ const GeneralSettingsAccount = (prop: any) => {
       navigation.navigate(SCREEN.TeamGeneralSetting);
     } else if (id == 3) {
       navigation.navigate(SCREEN.BillingDashboard);
+    }
+    else if (id == 4) {
+      navigation.navigate(SCREEN.SearchWebchatSettings);
     }
   };
   return (
@@ -80,7 +87,7 @@ const GeneralSettingsAccount = (prop: any) => {
         </View>
         <TouchableOpacity
            onPress={() =>
-            navigation.navigate(SCREEN.DrawerNavigations, {
+            navigation.navigate(SCREEN.DashBoardDrawer, {
               screen: SCREEN.DrawerStack,
               params: {
                 screen: SCREEN.Dashboard,

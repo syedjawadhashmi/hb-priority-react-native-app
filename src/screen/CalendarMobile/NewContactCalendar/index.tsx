@@ -7,7 +7,7 @@ import Header from '../../../component/common/Header';
 import {Icon} from '../../../assest';
 import DropDown from '../../../component/core/DropDown';
 import {Dropdata} from '../../../data/DummayData';
-import FilePickerManager from 'react-native-file-picker';
+import FilePickerManager from 'react-native-file-picker'
 
 const NewContactCalendar = (prop: any) => {
   const {navigation} = prop;

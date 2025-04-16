@@ -114,7 +114,7 @@ const DrawerNavigations = () => {
         name={SCREEN.BottomBarNavigation}
         component={BottomBarNavigation}
       />
-      <Drawer.Screen name={SCREEN.DrawerStack} component={DrawerStack} />
+      {/* <Drawer.Screen name={SCREEN.DrawerStack} component={DrawerStack} /> */}
     </Drawer.Navigator>
   );
 };

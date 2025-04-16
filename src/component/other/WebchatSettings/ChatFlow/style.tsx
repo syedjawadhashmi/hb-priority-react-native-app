@@ -1,0 +1,161 @@
+import {StyleSheet} from 'react-native';
+import {COLOR, commonStyles, FONT} from '../../../../themes/StyleGuides';
+
+const styles = StyleSheet.create({
+  container: {},
+  tittle: {
+    fontSize: 14,
+    fontWeight: '800',
+    color: COLOR.perpal_3,
+    marginLeft: '5%',
+  },
+  disciption: {
+    fontSize: 10,
+    fontWeight: '800',
+    color: COLOR.gray_5,
+    width: '90%',
+    alignSelf: 'center',
+    marginTop: '4%',
+  },
+  CardContainer: {
+    width: '90%',
+    height: 470,
+    backgroundColor: COLOR.whites,
+    alignSelf: 'center',
+    marginTop: '6%',
+    borderRadius: 13,
+    marginBottom: '5%',
+    overflow: 'hidden',
+  },
+  titleContainer: {
+    width: '100%',
+    height: 100,
+    backgroundColor: COLOR.black1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: '5%',
+    paddingVertical: '5%',
+  },
+  pen: {width: 17, height: 17, resizeMode: 'contain'},
+  title: {fontSize: 14, fontWeight: '800', color: COLOR.whites},
+  ListContainer: {
+    paddingBottom: '4%',
+    marginTop: '1%',
+  },
+  BottomContainer: {
+    ...commonStyles.verticleView,
+    height: 40,
+    width: '95%',
+    paddingHorizontal: '3%',
+    alignSelf: 'center',
+    borderRadius: 20,
+    backgroundColor: COLOR.white1,
+    
+  },
+  InputStyle: {
+    fontSize: 15,
+    color: COLOR.black,
+    justifyContent: 'center',
+    top: 1.5,
+    flex: 1,
+  },
+  TextInputConteiner: {
+    backgroundColor: COLOR.white1,
+    borderColor: COLOR.gray,
+    ...commonStyles.verticleView,
+    paddingHorizontal: '3%',
+  },
+  IconStyle: {
+    width: 15,
+    height: 15,
+    resizeMode: 'contain',
+    tintColor: COLOR.gray_5,
+  },
+  SendButton: {paddingHorizontal: '1%'},
+  SendIcon: {
+    width: 15,
+    height: 15,
+    resizeMode: 'contain',
+    tintColor: COLOR.primary,
+  },
+  close: {
+    width: 40,
+    height: 40,
+    borderRadius: 25,
+    backgroundColor: COLOR.mhroon_1,
+    ...commonStyles.center,
+    alignSelf: 'flex-end',
+    marginRight: '5%',
+    marginBottom: '10%',
+  },
+  weWillText: {
+    fontSize: 10,
+    fontWeight: '900',
+    color: COLOR.gray_5,
+    alignSelf: 'center',
+  },
+  dis: {
+    fontSize: 9,
+    fontWeight: '400',
+    color: COLOR.gray_5,
+    textAlign: 'center',
+  },
+  MessageLabel2: {
+    fontSize: 12,
+    fontFamily: FONT.Geist_Medium,
+    color: COLOR.gray_5,
+    width: 140,
+    flexWrap: 'wrap',
+  },
+
+  MesgSenderContainer: {
+    paddingVertical: '5%',
+    paddingHorizontal: '8%',
+    backgroundColor: COLOR.gray_7,
+    borderRadius: 15,
+    borderTopRightRadius: 2,
+    marginRight: '7%',
+  },
+  timeSenderAndRacive2: {
+    fontSize: 10,
+    fontFamily: FONT.Geist_Regular,
+    color: COLOR.gary2,
+    marginTop: '4%',
+    marginBottom: '5%',
+    marginRight: '7%',
+  },
+  MessageCard: {
+    width: '92%',
+    marginTop: '10%',
+    alignItems: 'flex-start',
+    // marginLeft: "2%",
+    alignSelf: 'center',
+  },
+  btnSend: {
+    width: '80%',
+    height: 40,
+    borderRadius: 7,
+    backgroundColor: COLOR.mhroon_1,
+    ...commonStyles.center,
+    alignSelf: 'center',
+    marginTop: '7%',
+  },
+  sendBtnText: {fontSize: 15, fontWeight: '400', color: COLOR.gray_7},
+  line:{
+    width: '100%',
+    height: 1,
+    backgroundColor: COLOR.gray_7,
+    marginTop: '20%',
+    marginBottom: '5%',
+  },
+
+  ChatIcon: {
+    width: 20,
+    height: 20,
+    resizeMode: 'contain',
+    alignSelf: 'center',
+    marginBottom: '5%',
+  }
+});
+
+export default styles;

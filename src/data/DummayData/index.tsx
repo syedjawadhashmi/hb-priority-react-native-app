@@ -109,6 +109,19 @@ export const DrawerCRMList = [
 
 export const DashBoardDrawerList = [
   {
+    title: 'Citation Builder',
+    Icon: Icon.location_2,
+  },  {
+    title: 'Phone Number',
+    Icon: Icon.PhonesAndMessage,
+  },  {
+    title: 'Review Request',
+    Icon: Icon.send,
+  },  {
+    title: 'Texting Config',
+    Icon: Icon.chat_3,
+  },
+  {
     title: 'Support',
     Icon: Icon.SportDashBoard,
   },
@@ -2005,3 +2018,251 @@ const contactData = [
   },
 ];
 export default contactData;
+
+
+export const WebchatFAQQuestion = [
+  {
+    Qtn: 'Testing Question 1',
+    Ans: 'Answer Question 1',
+  },
+  {
+    Qtn: 'Testing Question 1',
+    Ans: 'Answer Question 1',
+  },
+  {
+    Qtn: 'Testing Question 1',
+    Ans: 'Answer Question 1',
+  },
+  {
+    Qtn: 'Testing Question 1',
+    Ans: 'Answer Question 1',
+  },
+  {
+    Qtn: 'Testing Question 1',
+    Ans: 'Answer Question 1',
+  },
+  {
+    Qtn: 'Testing Question 1',
+    Ans: 'Answer Question 1',
+  },
+  {
+    Qtn: 'Testing Question 1',
+    Ans: 'Answer Question 1',
+  },
+];
+
+
+
+export const ChatFlowList = [
+  {
+    id: 1,
+    text: 'Can I make an appointment for the weekend? ',
+    type: 'sender',
+    time: '2:55',
+    name: 'JAms',
+
+    image: require('../../assest/image/HomeListImage1.png'),
+    date: '02,17.2024',
+  },
+  {
+    id: 2,
+    text: 'Give us a moment while we look for someone available to help you. ',
+    type: 'receiver',
+    time: '3:02',
+    name: 'RMrman',
+
+    image: require('../../assest/image/HomeListImage1.png'),
+  },
+  {
+    id: 3,
+    text: 'Alright',
+    type: 'sender',
+    time: '3:10',
+    name: 'JAms',
+
+    image: require('../../assest/image/HomeListImage1.png'),
+  },
+];
+
+
+export const WebchatSettingsWindowOpens = [
+  {
+    title: 'When user clicks',
+  },
+  {
+    title: 'Always Open',
+  },
+  {
+    title: 'Automatically after 5 seconds',
+  },
+  {
+    title: 'Automatically after 10 seconds',
+  },
+  {
+    title: 'Automatically after 15 seconds',
+  },
+];
+
+
+export const TableImportFAQs = [
+  {
+    Spreadsheet: 'Question*',
+    SampleData: [
+      {
+        Q: 'Do you have medicines?',
+      },
+      {
+        Q: 'Do you have dairy products?',
+      },
+    ],
+    HubSpark: 'Question',
+  },
+  {
+    Spreadsheet: 'Answer*',
+    SampleData: [
+      {
+        Q: 'No',
+      },
+      {
+        Q: 'unfortunately...',
+      },
+      {
+        Q: 'Yes we do...',
+      },
+    ],
+    HubSpark: 'Answer',
+  },
+  {
+    Spreadsheet: 'Location hierarchy*',
+    SampleData: [
+      {
+        Q: 'Location',
+      },
+      {
+        Q: 'Location',
+      },
+      {
+        Q: 'Location',
+      },
+    ],
+    HubSpark: 'Location hierarchy',
+  },
+  {
+    Spreadsheet: 'Location value*',
+    SampleData: [
+      {
+        Q: 'Crate and',
+      },
+      {
+        Q: 'Barrels',
+      },
+    ],
+    HubSpark: 'Location value',
+  },
+];
+
+
+
+export const countryCodes = [
+  {code: '+1', name: 'United States', shortName: 'US'},
+  {code: '+7', name: 'Russia', shortName: 'RU'},
+  {code: '+20', name: 'Egypt', shortName: 'EG'},
+  {code: '+27', name: 'South Africa', shortName: 'ZA'},
+  {code: '+30', name: 'Greece', shortName: 'GR'},
+  {code: '+31', name: 'Netherlands', shortName: 'NL'},
+  {code: '+32', name: 'Belgium', shortName: 'BE'},
+  {code: '+33', name: 'France', shortName: 'FR'},
+  {code: '+34', name: 'Spain', shortName: 'ES'},
+  {code: '+36', name: 'Hungary', shortName: 'HU'},
+  {code: '+39', name: 'Italy', shortName: 'IT'},
+  {code: '+40', name: 'Romania', shortName: 'RO'},
+  {code: '+41', name: 'Switzerland', shortName: 'CH'},
+  {code: '+44', name: 'United Kingdom', shortName: 'GB'},
+  {code: '+45', name: 'Denmark', shortName: 'DK'},
+  {code: '+46', name: 'Sweden', shortName: 'SE'},
+  {code: '+47', name: 'Norway', shortName: 'NO'},
+  {code: '+48', name: 'Poland', shortName: 'PL'},
+  {code: '+49', name: 'Germany', shortName: 'DE'},
+  {code: '+52', name: 'Mexico', shortName: 'MX'},
+  {code: '+54', name: 'Argentina', shortName: 'AR'},
+  {code: '+55', name: 'Brazil', shortName: 'BR'},
+  {code: '+56', name: 'Chile', shortName: 'CL'},
+  {code: '+57', name: 'Colombia', shortName: 'CO'},
+  {code: '+58', name: 'Venezuela', shortName: 'VE'},
+  {code: '+60', name: 'Malaysia', shortName: 'MY'},
+  {code: '+61', name: 'Australia', shortName: 'AU'},
+  {code: '+62', name: 'Indonesia', shortName: 'ID'},
+  {code: '+63', name: 'Philippines', shortName: 'PH'},
+  {code: '+64', name: 'New Zealand', shortName: 'NZ'},
+  {code: '+65', name: 'Singapore', shortName: 'SG'},
+  {code: '+66', name: 'Thailand', shortName: 'TH'},
+  {code: '+81', name: 'Japan', shortName: 'JP'},
+  {code: '+82', name: 'South Korea', shortName: 'KR'},
+  {code: '+84', name: 'Vietnam', shortName: 'VN'},
+  {code: '+86', name: 'China', shortName: 'CN'},
+  {code: '+90', name: 'Turkey', shortName: 'TR'},
+  {code: '+91', name: 'India', shortName: 'IN'},
+  {code: '+92', name: 'Pakistan', shortName: 'PK'},
+  {code: '+93', name: 'Afghanistan', shortName: 'AF'},
+  {code: '+94', name: 'Sri Lanka', shortName: 'LK'},
+  {code: '+95', name: 'Myanmar', shortName: 'MM'},
+  {code: '+98', name: 'Iran', shortName: 'IR'},
+  {code: '+211', name: 'South Sudan', shortName: 'SS'},
+  {code: '+212', name: 'Morocco', shortName: 'MA'},
+  {code: '+213', name: 'Algeria', shortName: 'DZ'},
+  {code: '+216', name: 'Tunisia', shortName: 'TN'},
+  {code: '+218', name: 'Libya', shortName: 'LY'},
+  {code: '+220', name: 'Gambia', shortName: 'GM'},
+  {code: '+221', name: 'Senegal', shortName: 'SN'},
+  {code: '+222', name: 'Mauritania', shortName: 'MR'},
+  {code: '+223', name: 'Mali', shortName: 'ML'},
+  {code: '+224', name: 'Guinea', shortName: 'GN'},
+  {code: '+225', name: 'Ivory Coast', shortName: 'CI'},
+  {code: '+226', name: 'Burkina Faso', shortName: 'BF'},
+  {code: '+227', name: 'Niger', shortName: 'NE'},
+  {code: '+228', name: 'Togo', shortName: 'TG'},
+  {code: '+229', name: 'Benin', shortName: 'BJ'},
+  {code: '+230', name: 'Mauritius', shortName: 'MU'},
+  {code: '+231', name: 'Liberia', shortName: 'LR'},
+  {code: '+232', name: 'Sierra Leone', shortName: 'SL'},
+  {code: '+233', name: 'Ghana', shortName: 'GH'},
+  {code: '+234', name: 'Nigeria', shortName: 'NG'},
+  {code: '+235', name: 'Chad', shortName: 'TD'},
+  {code: '+236', name: 'Central African Republic', shortName: 'CF'},
+  {code: '+237', name: 'Cameroon', shortName: 'CM'},
+  {code: '+238', name: 'Cape Verde', shortName: 'CV'},
+  {code: '+239', name: 'São Tomé and Príncipe', shortName: 'ST'},
+  {code: '+240', name: 'Equatorial Guinea', shortName: 'GQ'},
+  {code: '+241', name: 'Gabon', shortName: 'GA'},
+  {code: '+242', name: 'Republic of the Congo', shortName: 'CG'},
+  {code: '+243', name: 'Democratic Republic of the Congo', shortName: 'CD'},
+  {code: '+244', name: 'Angola', shortName: 'AO'},
+  {code: '+245', name: 'Guinea-Bissau', shortName: 'GW'},
+  {code: '+246', name: 'British Indian Ocean Territory', shortName: 'IO'},
+  {code: '+248', name: 'Seychelles', shortName: 'SC'},
+  {code: '+249', name: 'Sudan', shortName: 'SD'},
+  {code: '+250', name: 'Rwanda', shortName: 'RW'},
+  {code: '+251', name: 'Ethiopia', shortName: 'ET'},
+  {code: '+252', name: 'Somalia', shortName: 'SO'},
+  {code: '+253', name: 'Djibouti', shortName: 'DJ'},
+  {code: '+254', name: 'Kenya', shortName: 'KE'},
+  {code: '+255', name: 'Tanzania', shortName: 'TZ'},
+  {code: '+256', name: 'Uganda', shortName: 'UG'},
+  {code: '+257', name: 'Burundi', shortName: 'BI'},
+  {code: '+258', name: 'Mozambique', shortName: 'MZ'},
+  {code: '+260', name: 'Zambia', shortName: 'ZM'},
+  {code: '+261', name: 'Madagascar', shortName: 'MG'},
+  {code: '+262', name: 'Réunion', shortName: 'RE'},
+  {code: '+263', name: 'Zimbabwe', shortName: 'ZW'},
+  {code: '+264', name: 'Namibia', shortName: 'NA'},
+  {code: '+265', name: 'Malawi', shortName: 'MW'},
+  {code: '+266', name: 'Lesotho', shortName: 'LS'},
+  {code: '+267', name: 'Botswana', shortName: 'BW'},
+  {code: '+268', name: 'Eswatini', shortName: 'SZ'},
+  {code: '+269', name: 'Comoros', shortName: 'KM'},
+  {code: '+290', name: 'Saint Helena', shortName: 'SH'},
+  {code: '+291', name: 'Eritrea', shortName: 'ER'},
+  {code: '+297', name: 'Aruba', shortName: 'AW'},
+  {code: '+298', name: 'Faroe Islands', shortName: 'FO'},
+  {code: '+299', name: 'Greenland', shortName: 'GL'},
+];

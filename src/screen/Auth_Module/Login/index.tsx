@@ -39,7 +39,7 @@ const Login = (props: any) => {
         <TouchableOpacity
           style={styles.LoginBtn}
           onPress={() =>
-            navigation.navigate(SCREEN.DrawerNavigations, {
+            navigation.navigate(SCREEN.DashBoardDrawer, {
               screen: SCREEN.DrawerStack,
               params: {
                 screen: SCREEN.GeneralSettingsAccount,

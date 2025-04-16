@@ -21,7 +21,7 @@ const Transactions = (props: AllCallProp) => {
         <TouchableOpacity
           style={styles.btnMain}
           onPress={() =>
-            navigation.navigate(SCREEN.DrawerNavigations, {
+            navigation.navigate(SCREEN.DashBoardDrawer, {
               screen: SCREEN.DrawerStack, 
               params: {
                 screen: SCREEN.InvoiceIDNumber, 
